@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+permissions:
+  id-token: write   # 請求 OIDC 令牌
+  contents: write   # 允許讀寫倉庫內容
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
