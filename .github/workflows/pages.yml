@@ -12,30 +12,24 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: |
+      - run: |
           npm install pnpm -g
           pnpm install
 
-      - name: Build project
-        run: pnpm build
+      - run: pnpm build
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: github-pages
           path: ./dist
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-        with:
-          path: ./dist  # 再次確認這裡的路徑
