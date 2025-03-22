@@ -32,7 +32,7 @@ lang: zh_TW
 點進去就可以看到Blog 2了
 ![image](https://hackmd.io/_uploads/BJvwfZ_zkx.png)
 
-> Flag:NHNC{comments_disqusjs}
+> NHNC{comments_disqusjs}
 
 ## Blog 3 (50 pts)
 ```
