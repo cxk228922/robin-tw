@@ -84,3 +84,4 @@ search <keyword>
 use <module path>
 set <option> <Value>
 ```
+如果有錯誤或建議加入的內容，請立即連繫我!
