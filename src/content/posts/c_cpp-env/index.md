@@ -2,7 +2,7 @@
 title: C/C++ coding environment
 published: 2024-11-01
 description: "給想寫C/C++的環境建置指南"
-tags: ["C/Cpp"]
+tags: ["C-Cpp"]
 category: meow
 draft: false
 ---

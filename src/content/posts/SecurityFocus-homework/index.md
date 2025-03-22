@@ -2,7 +2,7 @@
 title: SecurityFocus June Homework
 published: 2024-06-23
 description: "FlyDragonㄉ課的作業"
-tags: ["Cybersec","C/Cpp","Python","asm"]
+tags: ["Cybersec","C-Cpp","Python","asm"]
 category: CTF
 draft: false
 lang: zh_TW
