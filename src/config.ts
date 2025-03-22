@@ -81,6 +81,11 @@ export const profileConfig: ProfileConfig = {
       name:"Instagram",
       icon:"fa6-brands:instagram",
       url:"https://www.instagram.com/cmaker117/"
+    },
+    {
+      name:"Telegram",
+      icon:"fa6-brands:telegram",
+      url:"https://t.me/arc_testify"
     }
   ],
 }
