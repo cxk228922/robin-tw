@@ -5,6 +5,7 @@ description: "Writeup for NHNC 2025"
 tags: ["Cybersec","writeup"]
 category: CTF
 draft: false
+lang: zh_TW
 ---
 
 ![image](https://hackmd.io/_uploads/rkGxWW_MJg.png)
