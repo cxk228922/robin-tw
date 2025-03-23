@@ -1,7 +1,7 @@
 ---
-title: NHNC 2025 writeup
+title: NHNC 2024 writeup
 published: 2024-11-19
-description: "Writeup for NHNC 2025"
+description: "Writeup for NHNC 2024"
 tags: ["Cybersec","writeup"]
 category: CTF
 draft: false
