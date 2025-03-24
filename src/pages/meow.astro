@@ -6,19 +6,47 @@ import { getEntry } from 'astro:content'
 import { i18n } from '../i18n/translation'
 import I18nKey from '../i18n/i18nKey'
 import Markdown from '@components/misc/Markdown.astro'
+import Tags from '@components/widget/Tags.astro'
 
 const meowPost = await getEntry('spec', 'meow')
 
 const { Content } = await meowPost.render()
 const items = [
+    // {
+    //     title: 'Example',
+    //     imgurl: 'https://blog.aulypc0x0.online/_astro/favicon_amiya.plJwvgXH_ZGvskH.webp',
+    //     desc: 'Example friend card',
+    //     siteurl: 'meow meow meow',
+    //     tags: ['戰隊朋友','同班同學...etc'],
+    // },
     {
-        title: 'Example',
-        imgurl: 'https://blog.aulypc0x0.online/_astro/favicon_amiya.plJwvgXH_ZGvskH.webp',
-        desc: 'Example friend card',
-        siteurl: 'meow meow meow',
-        tags: ['戰對朋友','同班同學...etc'],
+        title: 'Mayboy',
+        imgurl: 'https://www.mayboy.net/profile.webp',
+        desc: 'Be Patient!',
+        siteurl: 'https://www.mayboy.net/',
+        tags: [''],
     },
-    
+    {
+        title: 'hsuan0223x',
+        imgurl: 'https://blog.hsuan0223x.com/_astro/avatar.C2ebVal-_Z1kBd17.webp',
+        desc: '一個沒什麼特別的人',
+        siteurl: 'https://blog.hsuan0223x.com/',
+        tags: [''],
+    },
+    {
+        title: 'Yuan',
+        imgurl:'https://yuan-tw.net/images/2.jfif',
+        desc: '目前在 NCSE Network 打工，當個每天都在通靈的 Network Operator',
+        siteurl: 'https://yuan-tw.net/',
+        tags: [''],
+    },
+    {
+        title: 'ChiLin',
+        imgurl: 'https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/450059926_2370100113381635_4066826226869461709_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=mCuqfPC-3d4Q7kNvgGE-bHg&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_gid=9CxCX9fdKoFKqrRY700IGQ&oh=00_AYH72tLCYm7eyyep6yiCtqN6BRK5-YBts7HQ6UNjljGSHw&oe=67E6D8D9',
+        desc: 'CyberSecurity / CTF Player / Rhythm Game',
+        siteurl: 'https://neko70.net/',
+        tags: [''],
+    },
 ]
 ---
 <MainGridLayout title={i18n(I18nKey.meow)} description={i18n(I18nKey.meow)}>
