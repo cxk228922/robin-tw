@@ -15,4 +15,8 @@ export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
     name: i18n(I18nKey.archive),
     url: '/archive/',
   },
+  [LinkPreset.Meow]: {
+    name:i18n(I18nKey.meow),
+    url: '/meow/',
+  },
 }
