@@ -9,8 +9,11 @@ import Markdown from '@components/misc/Markdown.astro'
 import Tags from '@components/widget/Tags.astro'
 
 const meowPost = await getEntry('spec', 'meow')
+// const meowEnd = await getEntry('spec', 'meow-end')
 
 const { Content } = await meowPost.render()
+// const { ContentEnd } = await meowEnd.render()
+
 const items = [
     // {
     //     title: 'Example',
@@ -47,6 +50,27 @@ const items = [
         siteurl: 'https://neko70.net/',
         tags: [''],
     },
+    {
+        title: 'Frank',
+        imgurl: 'https://avatars.githubusercontent.com/u/135571477?v=4',
+        desc: 'Linux & FOSS lover',
+        siteurl: 'https://frankk.uk/',
+        tags: [''],
+    },
+    {
+        title: 'LemonTea',
+        imgurl: 'https://scontent.ftpe7-4.fna.fbcdn.net/v/t39.30808-6/454447028_2020896431676829_1533747776623422991_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=tBZDVm1wrgUQ7kNvgEkg4YF&_nc_oc=AdmKIZ-YwcR6b3ZGlSbUtGiOI3mgnLIZhKh1poIFdftmGvf7A79J8TuxFMjKcnhE67I&_nc_zt=23&_nc_ht=scontent.ftpe7-4.fna&_nc_gid=LfBTiFuohSeAIrgKS1F41w&oh=00_AYGwPRo4ad4901dslzZq2ins9MO3UjFQe5Px7lVxQuuspw&oe=67E6E4E6',
+        desc: '一個對資訊有特別熱忱的學生',
+        siteurl:'https://blog.alvin-tw.me/',
+        tags: [''],
+    },
+    {
+        title: 'Elliot_404',
+        imgurl: 'https://avatars.githubusercontent.com/u/115418645?v=4',
+        desc: '一個喜歡資訊安全的學生，主要打 Web, OSINT',
+        siteurl: 'https://elliot-tw.pages.dev/',
+        tags: [''],
+    }
 ]
 ---
 <MainGridLayout title={i18n(I18nKey.meow)} description={i18n(I18nKey.meow)}>
@@ -55,6 +79,9 @@ const items = [
             <Markdown class="mt-2">
                 <Content />
             </Markdown>
+            <!-- <h1 class="text-xl font-bold mb-4 text-neutral-900 dark:text-neutral-100">
+                My friends
+              </h1> -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8 my-4">
                 {items.map((item) => (
                         <div class="flex flex-nowrap items-stretch h-28 gap-4 rounded-[var(--radius-large)]">
@@ -85,7 +112,10 @@ const items = [
                         </div>
                 ))}
             </div>
-
+            <!--
+            <Markdown class="mt-2">
+                <Content />
+            </Markdown>-->
         </div>
     </div>
 </MainGridLayout>
