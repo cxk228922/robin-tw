@@ -9,10 +9,10 @@ import Markdown from '@components/misc/Markdown.astro'
 import Tags from '@components/widget/Tags.astro'
 
 const meowPost = await getEntry('spec', 'meow')
-// const meowEnd = await getEntry('spec', 'meow-end')
+const meowEnd = await getEntry('spec', 'meow-end')
 
-const { Content } = await meowPost.render()
-// const { ContentEnd } = await meowEnd.render()
+const { Content: IntroContent } = await meowPost.render()
+const { Content: EndContent } = await meowEnd.render()
 
 const items = [
     // {
@@ -77,7 +77,7 @@ const items = [
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
         <div class="card-base z-10 px-9 py-6 relative w-full ">
             <Markdown class="mt-2">
-                <Content />
+                <IntroContent />
             </Markdown>
             <!-- <h1 class="text-xl font-bold mb-4 text-neutral-900 dark:text-neutral-100">
                 My friends
@@ -112,10 +112,9 @@ const items = [
                         </div>
                 ))}
             </div>
-            <!--
             <Markdown class="mt-2">
-                <Content />
-            </Markdown>-->
+                <EndContent />
+            </Markdown>
         </div>
     </div>
 </MainGridLayout>
