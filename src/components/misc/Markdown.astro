@@ -64,3 +64,37 @@ const className = Astro.props.class
     observer.observe(document.body, { childList: true, subtree: true });
   }
 </script>
+
+<style is:global>
+.remark-code-title #filename-with-lang {
+    padding: 8px 25px;
+    display: flex;
+    direction: row;
+    justify-content: space-between
+    }
+
+.remark-code-title #separate-line {
+    padding: 8px 0 3px;
+    border-top: 1px solid #e2e2e3
+    }
+
+html.dark .remark-code-title #separate-line {
+    border-top: 1px solid rgb(63,62,62)
+    }
+
+.remark-code-title #only-lang {
+    padding: 8px 25px;
+    display: flex;
+    direction: row;
+    justify-content: end
+    }
+
+@media screen and (max-width: 1024px) {
+    .remark-code-title {
+    font-size:small
+    }
+    .remark-code-title #row2 {
+    padding: 8px 0 6px
+    }
+    }
+</style>

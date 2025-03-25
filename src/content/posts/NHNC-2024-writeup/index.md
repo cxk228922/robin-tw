@@ -17,6 +17,7 @@ lang: zh_TW
 總召大人最帥了😘
 
 > NHNC{fishbaby1011sohandsome}
+
 ## Blog 2 (20 pts)
 ```
 出題者: Elliot_404
@@ -164,8 +165,8 @@ RSA for babys
 ```
 [file link-chal_17.py](https://nhnc.ic3dt3a.org/files/0af753d4faa8a004ce0b627fecca875e/chal_17.py?token=eyJ1c2VyX2lkIjo2MywidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6Njl9.Zzqanw.RSAvFnKI5xa5MVKYZGVs-a3lsPA)
 
-chal_17.py:
-```python=
+[//]: # (chal_17.py:)
+```py file=chal_17.py
 from Crypto.Util.number import *
 from Secret import flag1
 primes=[getPrime(512) for _ in range(3)]
