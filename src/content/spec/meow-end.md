@@ -15,6 +15,8 @@
 (以及續集: 星火燎原、自由幻夢)
 ![](https://upload.wikimedia.org/wikipedia/zh/0/08/Hunger_games_book.jpg)
 ## 影片
+- 不合群？不想社交？社会学带你看清不合群的本质 (读书的Harry)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9GEPJEfM0I8?si=sPDZUmUHOXBhILLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+- How Not to Be Wrong: The Power of Mathematical Thinking - with Jordan Ellenberg
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kZTKuMBJP7Y?si=yYBDWRiKGI6eA3jV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -52,22 +52,10 @@ export const navBarConfig: NavBarConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/avatar2.jpg',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+  avatar: 'assets/images/avatar3.jpg',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'Robin Chiang',
   bio: 'meow',
   links: [
-    {
-      name: 'Twitter',
-      icon: 'fa6-brands:twitter',       // Visit https://icones.js.org/ for icon codes
-                                        // You will need to install the corresponding icon set if it's not already included
-                                        // `pnpm add @iconify-json/<icon-set-name>`
-      url: 'https://x.com/is3YuaTefIX9AGP',
-    },
-    {
-      name: 'Steam',
-      icon: 'fa6-brands:steam',
-      url: 'https://steamcommunity.com/profiles/76561199210296732',
-    },
     {
       name: 'GitHub',
       icon: 'fa6-brands:github',
@@ -77,11 +65,6 @@ export const profileConfig: ProfileConfig = {
       name:"Discord",
       icon:"fa6-brands:discord",
       url:"https://discord.com/users/574487545392398337"
-    },
-    {
-      name:"Instagram",
-      icon:"fa6-brands:instagram",
-      url:"https://www.instagram.com/cmaker117/"
     },
     {
       name:"Telegram",
