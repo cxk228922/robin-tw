@@ -7,6 +7,11 @@
 
 只要能平靜地度過每一天就好ㄌ
 
+平常喜歡聽歌!
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/03oQg7iI38AKE2HeGx3wcL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<br>
+
 # Links
 
 
