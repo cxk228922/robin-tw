@@ -1,14 +1,20 @@
 # About
-來自台灣的學生
+
+<!-- <a href="https://wakatime.com/@125ffe1f-f833-479f-bec1-9983c5b5f8dd"><img src="https://wakatime.com/badge/user/125ffe1f-f833-479f-bec1-9983c5b5f8dd.svg" alt="Loading"></a><br> -->
+![Discord Presence](https://lanyard.cnrad.dev/api/574487545392398337)
+
+來自台灣的學生，目前就讀台北市立大安高級工業職業學校-資訊科
 
 默默無聞，沒有什麼特別的專長或天賦
 
 也沒有那些傲人的經歷
 
-只要能平靜地度過每一天就好ㄌ
+只要能平靜地度過每一天就好ㄌ<3
 
 平常喜歡聽歌!
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/03oQg7iI38AKE2HeGx3wcL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+![Recently Played](https://lastfm-recently-played.vercel.app/api?user=cxk228922)
 
 <br>
 
