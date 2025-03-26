@@ -1,5 +1,5 @@
 ---
-title: Fuwari blog 新增導航欄
+title: Fuwari blog 導航欄新增連結
 published: 2025-03-25
 description: "AULyPc大佬+我的修改建議(?"
 tags: ["web"]
