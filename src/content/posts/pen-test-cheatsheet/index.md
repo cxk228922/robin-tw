@@ -16,11 +16,10 @@ lang: zh_TW
 ## nmap
 掃主機和服務
 ```
-nmap -sC -sV -T4 -p- -A -O --script=vulnscan/vulnscan.nse --script-args vulscandb=cve.csv <target IP>
+nmap -T4 -p- -A -O --script=vulnscan/vulnscan.nse --script-args vulscandb=cve.csv <target IP>
 ```
-- `-sV` : 挖服務版本
 - `-T4` : 快速掃描(`T5`更快但有可能出錯)
-- `-A` : 屌逼逼高級偵查
+- `-A` : 屌逼逼高級偵查，包括OS探測、版本偵測、traceroute、script scan...
 - `-O` : 作業系統偵測
 - `-p-` : 掃所有port
 - `--script=vulnscan/vulnscan.nse --script-args vulnscandb=cve.csv` : 漏洞偵測(需要先下載[vulnscan](https://github.com/scipag/vulscan?spm=a2ty_o01.29997173.0.0.5582c921dkoQlB))
