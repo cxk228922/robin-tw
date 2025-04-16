@@ -15,13 +15,6 @@ const { Content: IntroContent } = await meowPost.render()
 const { Content: EndContent } = await meowEnd.render()
 
 const items = [
-    // {
-    //     title: 'Example',
-    //     imgurl: 'https://blog.aulypc0x0.online/_astro/favicon_amiya.plJwvgXH_ZGvskH.webp',
-    //     desc: 'Example friend card',
-    //     siteurl: 'meow meow meow',
-    //     tags: ['戰隊朋友','同班同學...etc'],
-    // },
     {
         title: 'Mayboy',
         imgurl: 'https://www.mayboy.net/profile.webp',
@@ -39,7 +32,7 @@ const items = [
     {
         title: 'Yuan',
         imgurl:'https://yuan-tw.net/images/2.jfif',
-        desc: '目前在 NCSE Network 打工，當個每天都在通靈的 Network Operator',
+        desc: '目前在 NCSE Network 打工，\n當個每天都在通靈的 Network Operator',
         siteurl: 'https://yuan-tw.net/',
         tags: [''],
     },
@@ -67,14 +60,14 @@ const items = [
     {
         title: 'Elliot_404',
         imgurl: 'https://avatars.githubusercontent.com/u/115418645?v=4',
-        desc: '一個喜歡資訊安全的學生，主要打 Web, OSINT',
+        desc: '一個喜歡資訊安全的學生，\n主要打 Web, OSINT',
         siteurl: 'https://elliot-tw.pages.dev/',
         tags: [''],
     },
     {
         title: 'Kohiro',
         imgurl: 'https://avatars.githubusercontent.com/u/161041270?v=4',
-        desc: 'CTF crypto web player/AI developer/ICEDTEA CTF kernel',
+        desc: 'CTF crypto web player/\nAI developer/\nICEDTEA CTF kernel',
         siteurl: 'https://github.com/kohiro961021',
         tags: [''],
     },
@@ -119,6 +112,13 @@ const items = [
         siteurl: 'https://github.com/guazinit',
         desc: 'CTF Player / Student from Taiwan.',
         tags:[''],
+    },
+    {
+        title:'Zhenyuan',
+        imgurl:'https://zhenyuan.dev/_astro/avatar.zug6OJ5k_1PJIfo.webp',
+        siteurl:'https://zhenyuan.dev/',
+        desc: '嗨😆 我是Zhenyuan✨\n來自台灣 就讀MUST資工系 🏫\n喜愛研究電腦相關事務！🥺',
+        tags:[''],
     }
 ]
 ---
@@ -140,7 +140,7 @@ const items = [
                         </div>
                         <div class="grow w-full">
                             <div class="font-bold transition text-lg text-neutral-900 dark:text-neutral-100 mb-1">{item.title}</div>
-                            <div class="text-50 text-sm font-medium">{item.desc}</div>
+                            <div class="text-50 text-sm font-medium whitespace-pre-wrap">{item.desc}</div>
                             <div class:list={["items-center", {"flex": true, "hidden md:flex" : false}]}>
                                 <div class="flex flex-row flex-nowrap items-center">
                                     {(item.tags && item.tags.length > 0) && item.tags.map((tag,i) => (
