@@ -6,7 +6,6 @@ tags: ["Cybersec","writeup"]
 category: CTF
 draft: false
 lang: zh_TW
-image: /1376647.jpg
 ---
 
 ![image](https://hackmd.io/_uploads/rkGxWW_MJg.png)
