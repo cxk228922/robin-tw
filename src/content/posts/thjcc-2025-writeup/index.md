@@ -21,7 +21,8 @@ lang: zh_TW
 他看起來是個AI bot，想到prompt injection
 
 我那時候在亂翻別人discord，就看到這位:
-<img src="https://hackmd.io/_uploads/r16bkPN1eg.png" height="600"/>
+<!-- <img src="https://hackmd.io/_uploads/r16bkPN1eg.png" height="600"/> -->
+![](https://hackmd.io/_uploads/r16bkPN1eg.png){height=600px}
 
 點近看他的blog唯一一篇文章:
 ![image](https://hackmd.io/_uploads/HytV1P4ylx.png)
@@ -137,7 +138,7 @@ while True:
     
     exec(inpt)
 ```
-他會過濾掉所有英文字母及數字
+他會過濾掉所有英文字母
 
 思路就是改掉`_`限制的內容，之後就可以RCEㄌ
 
@@ -160,16 +161,18 @@ __import__('os').system('/bin/sh')
 用010 editor把他的高度改掉
 ![image](https://hackmd.io/_uploads/rkPoK2B1ge.png)
 
-<img src="https://hackmd.io/_uploads/Hkp3t3Hygx.jpg" height="600"/>
+![](https://hackmd.io/_uploads/Hkp3t3Hygx.jpg){height=600px}
 
 >Flag: THJCC{1_d1dn7_h1d3_4ny7h1n6}
 
 ## Where's My Partner?(430)
 
 題目附上一張照片:
-<img src="https://hackmd.io/_uploads/Bkmuc2Hygg.png" height="550"/>
+<!-- <img src="https://hackmd.io/_uploads/Bkmuc2Hygg.png" height="550"/> -->
+![image](https://hackmd.io/_uploads/Bkmuc2Hygg.png){height=550px}
 
-要找的是機構的domain name
+
+要找的是附近eduroam機構的domain name
 
 拿[geowifi](https://github.com/GONZOsint/geowifi)去搜
 
@@ -942,7 +945,7 @@ if __name__ == '__main__':
         print('Please provide a key as an argument.')
     dummy()
 ```
-操為觀察一下，輸入的key會跑到`asd(p)`，如果`qwe(d, k)` == `qwe(d, p)` 那就是correct
+稍微觀察一下，輸入的key會跑到`asd(p)`，如果`qwe(d, k)` == `qwe(d, p)` 那就是correct
 
 如果p等於k 那上述必然相等，所以只要輸入`door_key`就好
 
@@ -1225,7 +1228,8 @@ for i in range(len(data)):
 with open("decrypted_output.bin","wb") as f:
     f.write(out)
 ```
-<img src="https://hackmd.io/_uploads/SkvjgEP1lg.png)" height="400"/>
+<!-- <img src="https://hackmd.io/_uploads/SkvjgEP1lg.png)" height="400"/> -->
+![](https://hackmd.io/_uploads/SkvjgEP1lg.png){height="400px"}
 
 >Flag: THJCC{but_you_summoned_a_zannen_demon}
 
