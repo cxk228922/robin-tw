@@ -356,7 +356,7 @@ echo serialize($data);
 ?>
 ```
 > Flag: THJCC{lin3_r4nGeR_13_1ncreD!Ble_64m3?}
-
+<!-- 
 ## proxy | under_development(410)
 **/src/app.js:**
 ```javascript
@@ -450,7 +450,7 @@ app.get('/flag', (req, res) => {
 });
 
 app.listen(80, 'secret.flag.thjcc.tw');
-```
+``` -->
 
 
 
@@ -741,9 +741,9 @@ print(hexlify(new_token).decode())
 ```
 > Flag: THJCC{F1iP_Ou7_y0$Hino's_53Cr3t}
 
-## Speeded Block Cipher(260)
+<!-- ## Speeded Block Cipher(260)
 **chal:**
-```python!
+```python
 #!/usr/bin/python3
 from secret import FLAG
 import random
@@ -796,7 +796,7 @@ def main():
 
 if __name__ == '__main__':
     main()
-```
+``` -->
 
 
 # Reverse
