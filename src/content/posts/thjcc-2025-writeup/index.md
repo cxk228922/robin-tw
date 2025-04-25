@@ -22,7 +22,7 @@ lang: zh_TW
 
 我那時候在亂翻別人discord，就看到這位:
 <!-- <img src="https://hackmd.io/_uploads/r16bkPN1eg.png" height="600"/> -->
-![](https://hackmd.io/_uploads/r16bkPN1eg.png){height=600px}
+![](https://hackmd.io/_uploads/r16bkPN1eg.png)
 
 點近看他的blog唯一一篇文章:
 ![image](https://hackmd.io/_uploads/HytV1P4ylx.png)
@@ -161,7 +161,7 @@ __import__('os').system('/bin/sh')
 用010 editor把他的高度改掉
 ![image](https://hackmd.io/_uploads/rkPoK2B1ge.png)
 
-![](https://hackmd.io/_uploads/Hkp3t3Hygx.jpg){height=600px}
+![](https://hackmd.io/_uploads/Hkp3t3Hygx.jpg)
 
 >Flag: THJCC{1_d1dn7_h1d3_4ny7h1n6}
 
@@ -169,7 +169,7 @@ __import__('os').system('/bin/sh')
 
 題目附上一張照片:
 <!-- <img src="https://hackmd.io/_uploads/Bkmuc2Hygg.png" height="550"/> -->
-![image](https://hackmd.io/_uploads/Bkmuc2Hygg.png){height=550px}
+![image](https://hackmd.io/_uploads/Bkmuc2Hygg.png)
 
 
 要找的是附近eduroam機構的domain name
@@ -1229,7 +1229,7 @@ with open("decrypted_output.bin","wb") as f:
     f.write(out)
 ```
 <!-- <img src="https://hackmd.io/_uploads/SkvjgEP1lg.png)" height="400"/> -->
-![](https://hackmd.io/_uploads/SkvjgEP1lg.png){height="400px"}
+![](https://hackmd.io/_uploads/SkvjgEP1lg.png)
 
 >Flag: THJCC{but_you_summoned_a_zannen_demon}
 
