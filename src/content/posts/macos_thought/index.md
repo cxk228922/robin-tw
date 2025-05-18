@@ -1,5 +1,5 @@
 ---
-title: Ｗindows老狗的MacBook使用心得
+title: MacBook使用心得&想法
 published: 2025-05-05
 description: "最近換了MacBook OwO"
 tags: ["life"]

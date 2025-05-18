@@ -1,7 +1,7 @@
 # About 
 
 <!-- <a href="https://wakatime.com/@125ffe1f-f833-479f-bec1-9983c5b5f8dd"><img src="https://wakatime.com/badge/user/125ffe1f-f833-479f-bec1-9983c5b5f8dd.svg" alt="Loading"></a><br> -->
-![Discord Presence](https://lanyard.cnrad.dev/api/574487545392398337)
+![Discord Presence](https://lanyard-profile-readme.vercel.app/api/574487545392398337)
 
 來自台灣的學生，目前就讀台北市立大安高級工業職業學校-資訊科(高二)
 
