@@ -5,11 +5,13 @@
 
 來自台灣的學生，目前就讀台北市立大安高級工業職業學校-資訊科(高二)
 
-默默無聞，沒有什麼特別的專長或天賦
+默默無聞，沒有什麼特別的專長或天賦，也沒有那些傲人的經歷，只要能平靜地度過每一天就好ㄌ<3
 
-也沒有那些傲人的經歷
+目前對資訊安全的Reverse Engineering有些許興趣，有沒有大佬來教我Orz
 
-只要能平靜地度過每一天就好ㄌ<3
+另外，我目前在ICEDTEA與B33F 50UP戰隊打資安! 但都在躺分XD
+
+
 
 平常喜歡聽歌!
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/03oQg7iI38AKE2HeGx3wcL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
