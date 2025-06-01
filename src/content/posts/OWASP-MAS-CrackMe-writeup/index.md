@@ -9,6 +9,8 @@ lang: zh_TW
 ---
 題目連結：[OWASP MAS crackmes](https://mas.owasp.org/crackmes/)
 
+對我很爛只解幾題, 看到這篇文的兄弟直接敲我DC催我打題目
+
 # Android 
 ## Level 1
 
