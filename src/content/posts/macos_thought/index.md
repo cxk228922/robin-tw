@@ -4,7 +4,7 @@ published: 2025-05-05
 description: "最近換了MacBook OwO"
 tags: ["life"]
 category: life
-draft: false
+draft: true
 lang: zh_TW
 ---
 
@@ -123,9 +123,7 @@ MacBook Air M4比歷代價錢還低，且性價比很高，就想說順便換了
 
 如果是行動應用開發/網頁設計領域，使用Mac確實是個不錯的選擇
 
-但，你是學生
-
-你能確定你以後是做這個嗎？
+但很多人包括我, 都不知道未來要做什麼
 
 況且，很多大學應該都有一門課叫"作業系統開發"或"軟體開發"
 
