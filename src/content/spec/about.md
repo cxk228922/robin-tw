@@ -68,6 +68,6 @@
 | [GitHub](https://github.com/cxk228922)                              | cxk228922                                                   |                還沒仔細整理                |
 | [LinkedIn](www.linkedin.com/in/robin-chiang-834b822a4)              | Robin Chiang                                                |           等成年了過認證再整理XD           |
 | [X/Twitter](https://x.com/arc_testify)                              | arc_testify                                                 |                  歡迎互追                  |
-| [Steam](https://steamcommunity.com/profiles/76561199210296732)      | cmaker117                                                   |         遊戲基本上只玩Apex Legends         |
+| [Steam](https://steamcommunity.com/profiles/76561199210296732)      | cmaker117                                                   |         遊戲基本上只玩Apex Legends / CS2        |
 | [CTFtime](https://ctftime.org/user/196421)                          | Robin114514                                                 |        都跟ICEDTEA_CTF戰隊打(躺分)         |
 | Email                                                               | ben042708@gmail.com (個人)<br> cxk114514@ic3dt3a.org (戰隊) |                     -                      |
