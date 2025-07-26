@@ -14,11 +14,47 @@
 
 
 平常喜歡聽歌!
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/03oQg7iI38AKE2HeGx3wcL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
 ![Recently Played](https://lastfm-recently-played.vercel.app/api?user=cxk228922)
 
-<br>
+# Experience
+
+## 競賽經歷
+- 2024 AIS3 pre-exam Rk.203
+- 2024 PariotCTF Rk.42(with ICEDTEA)
+- 2024 No Hack No CTF Rk.7
+- 2025 大安高工校內程式競賽 Rk.3
+- 2025 THJCC summer Rk.4(學生賽區)
+- 2025 AIS3 pre-exam Rk.42
+
+## 課程參與
+- 2024 ISIP資安暑訓營 全勤績優
+- 2024 AWS Summit Taipei 資安混沌工程工作坊
+- 2024 WTF Academy Solidity 101
+- 2024 AIS3 Club 全國資安社團 暨社群幹部研習營
+- 2025 SCINT CVE 漏洞實作工作坊 - EternalBlue 復現
+- 2025 Google Cybersecurity Professional
+- 2025 大安區健康服務中心 急救技能訓練
+- 2025 EntangleTech 量子講座：在高效能運算（HPC）平台上的大規模量子電路模擬
+
+## 社群經歷
+- 資安戰隊ICEDTEA - 核心成員
+- 資安戰隊B33F 50UP - 隊員
+- 大安資研 - 社長
+- 2024 AWS Summit Taipei
+- 2025 TWNOG 第六屆台灣網路維運論壇
+- 2025 No Hack No CTF - 工作人員
+
+## 證照&認證
+- 2024 iPAS初級資訊安全工程師
+- 2025 Certified Computer Forensics Analyst (CCFA)
+
+## Incoming
+- 2025 AIS3 新型態資安實務暑期課程
+- 2025 Google數位人才計畫 Google Cloud學程
+- NVIDIA Developer Program - 使用CUDA加速python应用
+- 2025 HITCON CMT
+- iPAS中級資訊安全工程師
+- HTB Certified Penetration Testing Specialist
 
 # Links
 
