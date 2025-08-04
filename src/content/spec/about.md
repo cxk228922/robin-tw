@@ -23,6 +23,7 @@
 - 2025 大安高工校內程式競賽 Rk.3
 - 2025 THJCC summer Rk.4(學生賽區)
 - 2025 AIS3 pre-exam Rk.42
+- 2025 AIS3 跨領域資訊安全 - 最佳專題
 
 ## 課程參與
 - 2024 ISIP資安暑訓營 全勤績優
@@ -33,6 +34,8 @@
 - 2025 Google Cybersecurity Professional
 - 2025 大安區健康服務中心 急救技能訓練
 - 2025 EntangleTech 量子講座：在高效能運算（HPC）平台上的大規模量子電路模擬
+- 2025 AIS3 新型態資安實務暑期課程
+
 
 ## 社群經歷
 - 資安戰隊ICEDTEA - 核心成員
@@ -47,7 +50,6 @@
 - 2025 Certified Computer Forensics Analyst (CCFA)
 
 ## Incoming
-- 2025 AIS3 新型態資安實務暑期課程
 - 2025 Google數位人才計畫 Google Cloud學程
 - NVIDIA Developer Program - 使用CUDA加速python应用
 - 2025 HITCON CMT
