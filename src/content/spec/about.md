@@ -11,14 +11,12 @@
 
 另外，我目前在ICEDTEA與B33F 50UP戰隊打資安! 但都在躺分XD
 
-
-
 平常喜歡聽歌!
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/03oQg7iI38AKE2HeGx3wcL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 ![Recently Played](https://lastfm-recently-played.vercel.app/api?user=cxk228922)
 
-<br>
+
 
 # Links
 
