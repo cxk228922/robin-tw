@@ -70,4 +70,4 @@
 | [X/Twitter](https://x.com/arc_testify)                              | arc_testify                                                 |                  歡迎互追                  |
 | [Steam](https://steamcommunity.com/profiles/76561199210296732)      | cmaker117                                                   |         遊戲基本上只玩Apex Legends / CS2        |
 | [CTFtime](https://ctftime.org/user/196421)                          | Robin114514                                                 |        都跟ICEDTEA_CTF戰隊打(躺分)         |
-| Email                                                               | ben042708@gmail.com (個人)<br> cxk114514@ic3dt3a.org (戰隊) |                     -                      |
+
