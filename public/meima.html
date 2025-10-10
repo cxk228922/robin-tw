@@ -71,7 +71,6 @@
 
 <script>
 let answers={},
-    clickSound=document.getElementById('clickSound'),
     loadingWrap=document.getElementById('loadingWrap'),
     resultCard=document.getElementById('result-card'),
     resultText=document.getElementById('resultText'),
@@ -102,12 +101,9 @@ allOptions.forEach(option=>{
     });
 });
 
-questions[0].btn.addEventListener('click',()=>{if(answers['1']){clickSound.play();questions[0].el.classList.add('hide');questions[1].el.classList.remove('hide');progressFill.style.width='25%'}});
-questions[1].btn.addEventListener('click',()=>{if(answers['2']){clickSound.play();questions[1].el.classList.add('hide');questions[2].el.classList.remove('hide');progressFill.style.width='50%'}});
-questions[2].btn.addEventListener('click',()=>{if(answers['3']){clickSound.play();questions[2].el.classList.add('hide');questions[3].el.classList.remove('hide');progressFill.style.width='75%'}});
+
 questions[3].btn.addEventListener('click',()=>{
     if(answers['4']){
-        clickSound.play();
         questions.forEach(q=>q.el.classList.add('hide'));
         loadingWrap.style.display='flex';
         progressFill.style.width='100%';
