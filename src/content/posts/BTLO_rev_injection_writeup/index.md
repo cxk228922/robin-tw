@@ -1,5 +1,5 @@
 ---
-title: BTLO - Reverse enginnering - Injection: writeup
+title: BTLO - Reverse enginnering - Injection's writeup
 published: 2025-11-28
 description: "Blue Team Labs Online，Reverse Enginnering - Injection系列挑戰寫的writeup"
 tags: ["Cybersec","writeup"]
@@ -120,7 +120,9 @@ int main_getpid()
 
 ### Q4:What is the victim process? (Hint: 32bit)
 要先理解這整支程式在幹嘛
+
 在`main_getpid()`的地方，回傳notepad.exe的位址
+
 再看到main_inject():
 ```cpp=
 // main.inject
