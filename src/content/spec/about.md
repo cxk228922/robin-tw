@@ -3,7 +3,7 @@
 <!-- <a href="https://wakatime.com/@125ffe1f-f833-479f-bec1-9983c5b5f8dd"><img src="https://wakatime.com/badge/user/125ffe1f-f833-479f-bec1-9983c5b5f8dd.svg" alt="Loading"></a><br> -->
 ![Discord Presence](https://lanyard-profile-readme.vercel.app/api/574487545392398337)
 
-來自台灣的學生，目前就讀台北市立大安高級工業職業學校-資訊科(高二)
+來自台灣的學生，目前就讀台北市立大安高級工業職業學校-資訊科(高三)，準備成為陽明交通大學資工系大一
 
 默默無聞，沒有什麼特別的專長或天賦，也沒有那些傲人的經歷，只要能平靜地度過每一天就好ㄌ<3
 
@@ -24,6 +24,9 @@
 - 2025 THJCC summer Rk.4(學生賽區)
 - 2025 AIS3 pre-exam Rk.42
 - 2025 AIS3 跨領域資訊安全 - 最佳專題
+- 2025 AIS3 EOF初賽 Rk.14
+- 2026 金盾獎國高中組 Rk.3
+- 2026 大安高工資訊學程專題發表競賽 Rk.8
 
 ## 課程參與
 - 2024 ISIP資安暑訓營 全勤績優
@@ -35,6 +38,7 @@
 - 2025 大安區健康服務中心 急救技能訓練
 - 2025 EntangleTech 量子講座：在高效能運算（HPC）平台上的大規模量子電路模擬
 - 2025 AIS3 新型態資安實務暑期課程
+- 2025 Google數位人才計畫 Google Cloud學程
 
 
 ## 社群經歷
@@ -44,17 +48,12 @@
 - 2024 AWS Summit Taipei
 - 2025 TWNOG 第六屆台灣網路維運論壇
 - 2025 No Hack No CTF - 工作人員
+- 2025 HITCON CMT
 
 ## 證照&認證
 - 2024 iPAS初級資訊安全工程師
 - 2025 Certified Computer Forensics Analyst (CCFA)
 
-## Incoming
-- 2025 Google數位人才計畫 Google Cloud學程
-- NVIDIA Developer Program - 使用CUDA加速python应用
-- 2025 HITCON CMT
-- iPAS中級資訊安全工程師
-- HTB Certified Penetration Testing Specialist
 
 # Links
 
