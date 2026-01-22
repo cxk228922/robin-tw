@@ -1,18 +1,11 @@
 # About 
 
-<!-- <a href="https://wakatime.com/@125ffe1f-f833-479f-bec1-9983c5b5f8dd"><img src="https://wakatime.com/badge/user/125ffe1f-f833-479f-bec1-9983c5b5f8dd.svg" alt="Loading"></a><br> -->
-![Discord Presence](https://lanyard-profile-readme.vercel.app/api/574487545392398337)
 
-來自台灣的學生，目前就讀台北市立大安高級工業職業學校-資訊科(高三)，準備成為陽明交通大學資工系大一
-
-默默無聞，沒有什麼特別的專長或天賦，也沒有那些傲人的經歷，只要能平靜地度過每一天就好ㄌ<3
-
-目前對資訊安全的Reverse Engineering有些許興趣，有沒有大佬來教我Orz
-
-另外，我目前在ICEDTEA與B33F 50UP戰隊打資安! 但都在躺分XD
-
-平常喜歡聽歌!
-![Recently Played](https://lastfm-recently-played.vercel.app/api?user=cxk228922)
+- 來自台灣
+- 大安高工資訊科 -> 陽明交通大學資工系
+- 不會打資安
+- 發燒友
+- ~~Windows & Linux lover~~
 
 # Experience
 
