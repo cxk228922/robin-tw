@@ -64,7 +64,7 @@
 
 
 | Name                                                                | ID                                                          |                    Note                    |
-| ------------------------------------------------------------------- | ----------------------------------------------------------- |:------------------------------------------:|
+|---------------------------------------------------------------------| ----------------------------------------------------------- |:------------------------------------------:|
 | [Facebook](https://www.facebook.com/profile.php?id=100024622431683) | Robin Chiang                                                |                 歡迎加好友                 |
 | [Telegram](https://t.me/arc_testify)                                | arc_testify                                                 | 加之前先用中文講你是誰，最近詐騙真的太多ㄌ |
 | [Discord](https://discord.com/users/574487545392398337)             | arc_testify                                                 | 加之前先用中文講你是誰，最近詐騙真的太多ㄌ |
@@ -74,4 +74,5 @@
 | [X/Twitter](https://x.com/arc_testify)                              | arc_testify                                                 |                  歡迎互追                  |
 | [Steam](https://steamcommunity.com/profiles/76561199210296732)      | cmaker117                                                   |         遊戲基本上只玩Apex Legends / CS2        |
 | [CTFtime](https://ctftime.org/user/196421)                          | Robin114514                                                 |        都跟ICEDTEA_CTF戰隊打(躺分)         |
+| [我的Dicord Server](https://discord.gg/Kg6UCyWw9Y)                    |Kg6UCyWw9Y |歡迎加入^^
 
